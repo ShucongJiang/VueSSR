@@ -8,6 +8,8 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+
+process.env.NODE_ENV = "production";
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
